@@ -14,7 +14,19 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    script: [
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js'
+      }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +35,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
   /*
    ** Plugins to load before mounting the App
    */

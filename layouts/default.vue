@@ -1,13 +1,15 @@
 <template>
   <div>
-    <div class="flex flex-col h-screen min-h-screen bg-gray-200">
+    <div class="flex flex-col h-screen min-h-screen bg-gray-300">
       <NavBar @sidenavclick="sideClick" />
       <div class="flex  flex-1 overflow-y-hidden">
         <transition name="slide">
           <div
             v-if="sidenav"
             class="flex w-64  overflow-y-auto border-r-2 bg-gray-900"
-          ></div>
+          >
+            <SideLinks />
+          </div>
         </transition>
 
         <div class=" flex-1 overflow-y-auto">
@@ -20,8 +22,9 @@
 
 <script>
 import NavBar from '../components/NavBar'
+import SideLinks from '../components/SideLinks'
 export default {
-  components: { NavBar },
+  components: { SideLinks, NavBar },
   data() {
     return {
       sidenav: true

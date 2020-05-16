@@ -1,32 +1,22 @@
 <template>
   <div
-    class="flex items-center justify-between px-4 bg-gray-900 text-gray-200 h-12 border-b-2 border-gray-800"
+    class="flex items-center justify-between px-4 bg-gray-900 text-gray-600 h-12 border-b-2 border-gray-800"
   >
     <div class="flex items-center">
-      <button class="mr-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="h-6 w-6 get fill-current hover:text-white"
-          @click="$emit('sidenavclick', true)"
-        >
-          <path
-            class="heroicon-ui"
-            d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
-          />
-        </svg>
+      <button class="mr-3 text-2xl" @click="$emit('sidenavclick', true)">
+        <i class="fas fa-bars text-2xl"></i>
       </button>
-      <span class="font-medium">
+      <span class="font-medium text-gray-300">
         Ogtay Huseynov
       </span>
     </div>
-    <div class="flex">
+    <div class="flex text-gray-300">
       <span
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
-          class="h-6 w-6 get fill-current hover:text-white mr-1"
+          class="h-6 w-6 get fill-current mr-3"
         >
           <path
             class="heroicon-ui"
