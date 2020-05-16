@@ -6,7 +6,8 @@
         <transition name="slide">
           <div
             v-if="sidenav"
-            class="flex w-64  overflow-y-auto border-r-2 bg-gray-900"
+            :class="sidenav ? 'block' : ''"
+            class="flex w-64 hidden md:block overflow-y-auto border-r-2 bg-gray-900"
           >
             <SideLinks />
           </div>
